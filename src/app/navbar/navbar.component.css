@@ -1,0 +1,56 @@
+nav {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 10px;
+  }
+  
+  nav a:hover {
+    color: #E0E0E0;
+  }
+  
+  /* Media queries */
+  @media (max-width: 800px) {
+    nav {
+      flex-wrap: wrap;
+    }
+    nav a {
+      margin: 10px 0;
+      width: 100%;
+      text-align: center;
+    }
+    /* Hamburger menu */
+    .hamburger-menu {
+      display: block;
+    }
+    /* Hide menu items */
+    nav a {
+      display: none;
+    }
+  }
+  
+  /* Dropdown menu */
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: black;
+    color: white;
+  }
+  
+  /* Show dropdown menu on hover */
+  nav a:hover + .dropdown-menu {
+    display: block;
+  }
+  
