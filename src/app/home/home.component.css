@@ -1,0 +1,17 @@
+.home{
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    text-align: center;
+    text-decoration: wavy;
+  
+}
+.title{
+    color: #fff;
+    text-align: center;
+    text-transform: capitalize;
+  
+}
+header{
+  padding: 100px;
+}

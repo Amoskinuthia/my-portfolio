@@ -1,0 +1,26 @@
+.body {
+    width: 100%;
+    min-height: calc(100vh - 30px);
+    position: relative;
+    top: 0;
+    transition: all .5s ease;
+    background: #F0F5F2;
+    padding: 5rem;
+    background-color: rgb(131, 126, 126);
+
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    background-size: cover;
+
+}
+/* background-image: url(../../assets/images/backgroundImage.jpeg); */
+
+.body-trimmed {
+    width: 100%;
+    margin-left: 16.5625rem;
+}
+
+.body-md-screen {
+    width: calc(100% - 5rem);
+
+}
