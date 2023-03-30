@@ -8,6 +8,7 @@ nav {
     top: 0;
     width: 100%;
     z-index: 1;
+    box-shadow: 0 .25rem .25rem #e6edef;
   }
   
   nav a {
@@ -53,4 +54,7 @@ nav {
   nav a:hover + .dropdown-menu {
     display: block;
   }
+
+   
+  
   

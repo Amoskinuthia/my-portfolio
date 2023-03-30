@@ -4,16 +4,14 @@
     position: relative;
     top: 0;
     transition: all .5s ease;
-    background: #F0F5F2;
     padding: 5rem;
-    background-color: rgb(131, 126, 126);
-
+    background-image: url(../../assets/images/backgroundImage.jpeg);
     background-repeat: no-repeat;
     background-position: 100% 100%;
     background-size: cover;
 
 }
-/* background-image: url(../../assets/images/backgroundImage.jpeg); */
+
 
 .body-trimmed {
     width: 100%;

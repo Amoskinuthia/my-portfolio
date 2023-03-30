@@ -11,6 +11,7 @@ import { ContactsComponent } from './contacts/contacts.component';
 import { ArticlesComponent } from './articles/articles.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { BodyComponent } from './body/body.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { BodyComponent } from './body/body.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

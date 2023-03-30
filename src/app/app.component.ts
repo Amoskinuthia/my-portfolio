@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ChildrenOutletContexts, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'my-portfolio';
+  constructor(private contexts: ChildrenOutletContexts)
+   { }
+getRouteAnimationData() {
+    return this.contexts.getContext('primary')?.route?.snapshot.data?.['animation'];
+}
 }

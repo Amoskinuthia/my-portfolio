@@ -10,24 +10,30 @@ const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   {path: 'about',
   component: AboutComponent,
+  data: { animation: 'about' }
 },
 {path: 'home',
 component: HomeComponent,
+data: { animation: 'home' }
 },
 {path: 'contacts',
 component: ContactsComponent,
+data: { animation: 'contacts' }
 },
 {
   path: 'projects',
   component: ProjectsComponent,
+  data: { animation: 'projects' }
 },
 {
   path: 'articles',
   component: ArticlesComponent,
+  data: { animation: 'articles' }
 },
 {
   path: 'skills',
   component: AboutComponent,
+  data: { animation: 'skills' }
 }
 
 ];
