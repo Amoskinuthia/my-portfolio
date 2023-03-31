@@ -10,12 +10,15 @@ nav {
     z-index: 1;
     box-shadow: 0 .25rem .25rem #e6edef;
   }
+  span {
+    color: white;
+  }
   
   nav a {
     color: white;
     text-decoration: none;
-    margin: 0 10px;
-    padding: 10px;
+    margin: 0 5px;
+    padding: 5px;
   }
   
   nav a:hover {
@@ -46,7 +49,7 @@ nav {
   .dropdown-menu {
     display: none;
     position: absolute;
-    background-color: black;
+    background-color: rgb(230, 36, 36);
     color: white;
   }
   

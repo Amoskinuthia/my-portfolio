@@ -19,6 +19,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
   ]
 })
 export class AboutComponent implements OnInit {
+progress: any;
 
   constructor(private renderer: Renderer2, private elementRef: ElementRef) { }
 
