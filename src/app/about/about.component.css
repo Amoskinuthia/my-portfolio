@@ -2,23 +2,18 @@
     display: flex;
     flex-direction: column;
     border-radius: .5rem;
-    background-color: #fff;
+    background-color: rgb(19, 17, 17);
     margin: 1.25rem;
     box-shadow: 0 .25rem .5rem #e6edef;
     width: 600px;
   
 
     }
-    .card :hover {
-        transform: scale(1.2);
-        cursor: pointer;
-        background-color: #04AA6D;
+    .card:hover {
+      background-color: #090e1a;
+      transform: scale(1.05);
+    }
     
-        }
-        .card :hover .card-body p {
-            background-color: #04AA6D;
-            position: relative;
-        }
 
 .card-head {
     padding: 1rem 1.5rem;
@@ -26,6 +21,8 @@
     font-size: 1rem;
     font-weight: 600;
 }
+
+    
 
 .card-body {
     padding: 1rem 1.5rem; 
@@ -195,8 +192,8 @@
   width: 68%;
 }
   @keyframes example {
-    0%   {background-color:red; left:0px; top:0px; width: 100px;  }
-    100% {background-color:rgb(0, 255, 55); left:0px; top:0px; width: 150px; }
+    0%   {background-color:rgb(8, 7, 7); left:0px; top:0px; width: 100px;  }
+    100% {background-color:rgb(214, 210, 224); left:0px; top:0px; width: 150px; }
   }
   .progress {
     height: 10px;

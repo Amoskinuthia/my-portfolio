@@ -1,4 +1,4 @@
-import { Component, OnInit, Renderer2, ElementRef } from '@angular/core';
+import { Component, OnInit, Renderer2, ElementRef,HostListener } from '@angular/core';
 import { trigger, state, style, transition, animate, query, stagger } from '@angular/animations';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
@@ -37,6 +37,21 @@ progress: any;
         this.renderer.setStyle(mybutton, 'display', 'none');
       }
     });
+  }
+  animationState = 'hide';
+
+  @HostListener('window:scroll', ['$event'])
+  checkScroll() {
+    const scrollPosition = window.pageYOffset;
+    const pricingElement = this.elementRef.nativeElement.querySelector('.card');
+    const pricingPosition = pricingElement.getBoundingClientRect().top + window.pageYOffset;
+
+    if (scrollPosition >= pricingPosition - 400) {
+      this.animationState = 'show';
+    }
+    else {
+      this.animationState = 'hide';
+    }
   }
   
   // When the user clicks on the button, scroll to the top of the document

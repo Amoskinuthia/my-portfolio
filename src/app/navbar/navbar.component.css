@@ -10,8 +10,13 @@ nav {
     z-index: 1;
     box-shadow: 0 .25rem .25rem #e6edef;
   }
-  span {
+  p {
     color: white;
+    text-decoration: solid;
+    font-weight: bolder;
+    font-size: 25px;
+    padding: 0;
+
   }
   
   nav a {
