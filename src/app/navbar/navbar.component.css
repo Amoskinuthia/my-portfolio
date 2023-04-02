@@ -62,6 +62,55 @@ nav {
   nav a:hover + .dropdown-menu {
     display: block;
   }
+  @media (max-width: 800px) {
+    .desktop-nav {
+      display: none;
+    }
+    .mobile-nav {
+      display: flex;
+      flex-direction: column;
+    }
+    .mobile-nav a {
+      margin: 10px 0;
+      width: 100%;
+      text-align: center;
+    }
+    /* Hamburger menu */
+    .hamburger-menu {
+      display: block;
+    }
+    /* Show dropdown menu on click */
+    .mobile-nav .dropdown-menu {
+      display: none;
+    }
+    .mobile-nav a:hover + .dropdown-menu {
+      display: block;
+    }
+  }
+  /* Desktop navigation */
+nav.desktop {
+  display: block;
+}
+
+/* Mobile navigation */
+nav.mobile {
+  display: none;
+}
+
+/* Media query for small screens */
+@media screen and (max-width: 800px) {
+  /* Hide desktop navigation */
+  nav.desktop {
+    display: none;
+  }
+
+  /* Show mobile navigation */
+  nav.mobile {
+    display: block;
+  }
+}
+
+  
 
    
   
