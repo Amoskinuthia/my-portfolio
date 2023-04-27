@@ -48,7 +48,7 @@
 /* Container for skill bars */
 .container {
   width: 100%; /* Full width */
-  background-color: #ddd; /* Grey background */
+  background-color: #131111; /* Grey background */
 }
 
 .skills {
@@ -102,7 +102,7 @@
   }
   #about {
  
-    color: white;
+    color: rgb(14, 2, 2);
   
   }
   .btn-signup {
